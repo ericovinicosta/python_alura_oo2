@@ -38,11 +38,15 @@ class Serie(Programa):
     def __str__(self):
         return f'Nome: {self.nome} - Temporadas: {self.temporadas} D - Likes: {self.likes}'
 
-class Playlist(list):
+class Playlist():
     def __init__(self, nome, programas):
         self.nome = nome
-        super().__init__(programas)
+        self._programas = programas
 
-    @property
-    def tamanho(self):
-        return len(self.programas)
+    def __getitem__(self, item):
+        return self._programas[item]
+
+    def __len__(self):
+        return len(self._programas)
+
+    

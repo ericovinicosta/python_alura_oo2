@@ -14,3 +14,4 @@ playlist_fim_de_semana = Playlist('Playlist1', lista_de_programas)
 for programa in playlist_fim_de_semana:
     print(programa)
 
+print(f'Tamanho: {len(playlist_fim_de_semana)}')
