@@ -11,7 +11,8 @@ lista_de_programas = [vigadores, end_game, teen_wolf, discovery]
 playlist_fim_de_semana = Playlist('Playlist1', lista_de_programas)
 
 
+print(playlist_fim_de_semana)
+
 for programa in playlist_fim_de_semana:
     print(programa)
 
-print(f'Tamanho: {len(playlist_fim_de_semana)}')

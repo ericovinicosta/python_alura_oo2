@@ -1,3 +1,4 @@
+
 class Programa:
     def __init__(self, nome, ano):
         self._nome = nome.title()
@@ -49,4 +50,5 @@ class Playlist():
     def __len__(self):
         return len(self._programas)
 
-    
+    def __str__(self):
+        return f'Playlist: {self.nome}  Tamanho: {len(self)}'
